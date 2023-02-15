@@ -1,0 +1,81 @@
+
+
+  Summary map data test cases
+    √ validate aggregation of input data (706ms)
+    √ validate aggregation of output data (5204ms)
+No data
+    √ validate aggregation of input and output of data for no record (2033ms)
+No data
+    √ validate aggregation of input and output of data for no record and meter data (339ms)
+{ MongoError: failed to connect to server [wronglocalhost:27017] on first connect
+    at Pool.<anonymous> (D:\Projects\Delta\TFS\Workspace\DataSCAPE\PDLC\Coding\DataMartServices\node_modules\mongodb-core\lib\topologies\server.js:313:35)
+    at emitOne (events.js:96:13)
+    at Pool.emit (events.js:188:7)
+    at Connection.<anonymous> (D:\Projects\Delta\TFS\Workspace\DataSCAPE\PDLC\Coding\DataMartServices\node_modules\mongodb-core\lib\connection\pool.js:271:12)
+    at Connection.g (events.js:291:16)
+    at emitTwo (events.js:106:13)
+    at Connection.emit (events.js:191:7)
+    at Socket.<anonymous> (D:\Projects\Delta\TFS\Workspace\DataSCAPE\PDLC\Coding\DataMartServices\node_modules\mongodb-core\lib\connection\connection.js:165:49)
+    at Socket.g (events.js:291:16)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at connectErrorNT (net.js:1020:8)
+    at _combinedTickCallback (internal/process/next_tick.js:74:11)
+    at process._tickCallback (internal/process/next_tick.js:98:9)
+  name: 'MongoError',
+  message: 'failed to connect to server [wronglocalhost:27017] on first connect' }
+    √ validate with wrong mongodb host (2926ms)
+get summary map invoked 2017-09-26T08:03:05.566Z
+data received 2017-09-26T08:03:06.105Z
+    √ validate data through summarymap controller (3848ms)
+
+  Network coverage map data test cases
+    √ validate whether number of record inserted matches the expected count (10887ms)
+get Network Coverage Map invoked 2017-09-26T08:03:21.449Z
+data received 2017-09-26T08:03:21.459Z
+    √ validate whether number of record inserted matches the expected count through controller (10275ms)
+    √ validate with wrong mongodb host
+
+  Alarms and Events data migration to RDBMS test cases
+end:
+    √ validate whether number of record inserted matches the expected count (12055ms)
+migrate alarms and events to RDBMS invoked 2017-09-26T08:03:45.783Z
+end:
+migrate alarms and events to RDBMS received { transformerdata: true } 2017-09-26T08:03:53.815Z
+    √ validate whether number of record inserted matches the expected count through controller (9164ms)
+
+  Meter and transaction data migration to RDBMS test cases
+end:
+    √ validate whether number of record inserted for transformer matches the expected count (3177ms)
+migrate transaction to RDBMS invoked 2017-09-26T08:03:59.159Z
+end:
+migrate transaction to RDBMS received { transformerdata: true } 2017-09-26T08:04:01.565Z
+    √ validate whether number of record inserted for transformer matches the expected count through controller (3376ms)
+migrate meter transaction to RDBMS invoked 2017-09-26T08:04:02.638Z
+end:
+migrate meter transaction to RDBMS received { meterdata: true } 2017-09-26T08:04:09.677Z
+    √ validate whether number of record inserted for meter matches the expected count (8217ms)
+
+  Outages data test cases
+    √ validate whether number of record inserted matches the expected count (1231ms)
+process outages 2017-09-26T08:04:14.062Z
+received response
+null 'success' 2017-09-26T08:04:14.488Z
+    √ validate whether number of record inserted matches the expected count through controller (2271ms)
+
+  Meter managerial data test cases
+    √ validate whether number of record inserted matches the expected count (2857ms)
+updateMeterManagerialDataToRDBMS to RDBMS invoked 2017-09-26T08:04:19.895Z
+updateMeterManagerialDataToRDBMS to RDBMS received 2017-09-26T08:04:20.549Z
+    √ validate whether number of record inserted matches the expected count through controller (1834ms)
+
+
+  18 passing (1m)
+
+
+=============================== Coverage summary ===============================
+Statements   : 87.89% ( 1793/2040 )
+Branches     : 70.19% ( 638/909 )
+Functions    : 93.91% ( 262/279 )
+Lines        : 87.89% ( 1793/2040 )
+================================================================================
