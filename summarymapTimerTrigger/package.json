@@ -1,0 +1,34 @@
+{
+  "name": "datamartservices",
+  "version": "1.0.0",
+  "description": "Data mart services to generate mart which can be consumed by Tableau",
+  "main": "datamart.js",
+  "scripts": {
+    "test": "istanbul cover ./node_modules/mocha/bin/_mocha > coverage.txt"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.2.0",
+    "async-foreach": "^0.1.3",
+    "gulp": "^3.9.0",
+    "gulp-zip": "^3.0.2",
+    "jslint": "^0.12.1",
+    "json2csv": "^5.0.1",
+    "moment": "^2.15.2",
+    "mongodb": "^3.5.9",
+    "mysql": "^2.11.1",
+    "mysql2": "^1.1.1",
+    "node-cron": "^1.1.2",
+    "sequelize": "^4.42.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "gulp": "^3.9.0",
+    "gulp-jshint": "^2.0.4",
+    "istanbul": "^0.4.5",
+    "jshint": "^2.9.4",
+    "mocha": "^3.2.0",
+    "mock-require": "^2.0.1"
+  }
+}
