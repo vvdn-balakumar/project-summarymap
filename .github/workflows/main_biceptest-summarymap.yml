@@ -41,4 +41,4 @@ jobs:
           app-name: 'biceptest-summarymap'
           slot-name: 'Production'
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_64BE0B60C16E4175BA93E42DB3A95FDA }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_CFB03CE1F43C49B8B5C42E3CADACA035 }}
