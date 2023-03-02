@@ -41,4 +41,4 @@ jobs:
           app-name: 'deltatest-summarymap'
           slot-name: 'Production'
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_9222FBB84E77472AA12589FC84873FAF }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_7DFDF1EC5E1D43E79A7AD6C4A0310CEE }}
